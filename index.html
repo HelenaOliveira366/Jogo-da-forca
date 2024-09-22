@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalloWeb</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+    <main>
+        <div class="content container text-center align-items-center justify-content-center">
+            <div id="apresentacao" class="row m-4">
+                <div class="col">
+                    <h1>GalloWeb</h1>
+                    <p>
+                        Jogo da forca divertido!
+                        <br>
+                        Vamos começar?
+                    </p>
+                    <div class="gif"></div>
+                    <button type="submit" class="btn mt-4">Começar</button>
+                </div>
+            </div>
+
+            <div id="capturaPalavra" class="row m-4 ">
+                <div class="col">
+                    <form>
+                        <div class="m-5">
+                            <label for="word" class="form-label mb-3">Digite a palavra a ser adivinhada:</label>
+                            <input type="text" name="word" id="word" class="form-control">
+                        </div>
+                        <div class="m-5">
+                            <label for="word" class="form-label mb-3">Quer dar uma dica? Se sim, qual?</label>
+                            <input type="text" name="word" id="word" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-danger">Adivinhar</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="adivinhacao" class="row m-4 ">
+                <p>A palavra é:</p>
+                <div id="boneco"></div>
+                <div id="insercao-letras">
+                    <p>PALAVRA</p>
+                </div>
+                <div id="teclado">
+                    <div class="m-2">
+                        <button class="btn btn-outline-success" value="A">A</button>
+                        <button class="btn btn-outline-success" value="B">B</button>
+                        <button class="btn btn-outline-success" value="C">C</button>
+                        <button class="btn btn-outline-success" value="D">D</button>
+                        <button class="btn btn-outline-success" value="E">E</button>
+                        <button class="btn btn-outline-success" value="F">F</button>
+                        <button class="btn btn-outline-success" value="G">G</button>
+                        <button class="btn btn-outline-success" value="H">H</button>
+                        <button class="btn btn-outline-success" value="I">I</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-outline-success" value="J">J</button>
+                        <button class="btn btn-outline-success" value="K">K</button>
+                        <button class="btn btn-outline-success" value="L">L</button>
+                        <button class="btn btn-outline-success" value="M">M</button>
+                        <button class="btn btn-outline-success" value="N">N</button>
+                        <button class="btn btn-outline-success" value="O">O</button>
+                        <button class="btn btn-outline-success" value="P">P</button>
+                        <button class="btn btn-outline-success" value="Q">Q</button>
+                        <button class="btn btn-outline-success" value="R">R</button>
+                    </div>
+                    <div class="m-2">
+                        <button class="btn btn-outline-success" value="S">S</button>
+                        <button class="btn btn-outline-success" value="T">T</button>
+                        <button class="btn btn-outline-success" value="U">U</button>
+                        <button class="btn btn-outline-success" value="V">V</button>
+                        <button class="btn btn-outline-success" value="W">W</button>
+                        <button class="btn btn-outline-success" value="X">X</button>
+                        <button class="btn btn-outline-success" value="Y">Y</button>
+                        <button class="btn btn-outline-success" value="Z">Z</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="resultado" class="">
+                <p>Resultado</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

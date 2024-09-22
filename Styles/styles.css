@@ -1,0 +1,80 @@
+:root{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+
+    --red: #C40C0C;
+    --dark-red: #810000;
+    --green: #367E18;
+    --dark-green: #;
+    --black: #171717;
+    --white: #FFFFFF;
+}
+
+.hidden{
+    display: none;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+.btn{
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    width: 180px;
+}
+
+.btn:hover{
+    background-color: var(--green);
+    color: var(--white);
+    scale: 1.1;
+}
+
+#apresentacao h1{
+    color: var(--green);
+    font-size: 4rem;
+}
+
+#apresentacao p{
+    color: var(--white);
+}
+
+#apresentacao .gif{
+    height: 250px;
+    background-image: url(../Assets/Patinho-dancando.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+#capturaPalavra .form-control:focus{
+    border: 2px solid var(--green);
+}
+
+#adivinhacao{
+
+}
+
+#boneco{
+   
+}
+
+#insercao-letras{
+
+}
+
+#teclado .btn{
+    background-color: var(--black);
+    border: 1px solid var(--green);
+}
+
+#teclado .btn:hover{
+    background-color: var(--green);
+}
+
+#teclado button{
+    width: 50px;
+}
