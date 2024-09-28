@@ -3,15 +3,21 @@
     font-size: 16px;
 
     --red: #C40C0C;
-    --dark-red: #810000;
-    --green: #367E18;
-    --dark-green: #;
+    --green: #06D001;
     --black: #171717;
     --white: #FFFFFF;
 }
 
 .hidden{
     display: none;
+}
+
+.positivo{
+    color: var(--green);
+}
+
+.negativo{
+    color: var(--red);
 }
 
 body{
@@ -21,20 +27,21 @@ body{
 }
 
 .btn{
-    background-color: var(--green);
+    background-color: var(--red);
     color: var(--white);
+    transition: .4s;
     border: none;
-    width: 180px;
+    width: 130px;
 }
 
 .btn:hover{
-    background-color: var(--green);
+    background-color: var(--red);
     color: var(--white);
     scale: 1.1;
 }
 
 #apresentacao h1{
-    color: var(--green);
+    color: var(--red);
     font-size: 4rem;
 }
 
@@ -50,9 +57,16 @@ body{
     object-fit: cover;
 }
 
-#capturaPalavra .form-control:focus{
-    border: 2px solid var(--green);
+#capturaPalavra .form-control{
+    width: 300px;
 }
+
+#capturaPalavra .form-control:focus{
+    border: 1px solid var(--red);
+    outline: none;
+    box-shadow: none;
+}
+
 
 #adivinhacao{
 
@@ -62,19 +76,31 @@ body{
    
 }
 
-#insercao-letras{
 
+#insercao-letras p{
+    width: 40%;
+    border-bottom: 1px solid var(--red);
 }
 
-#teclado .btn{
+#teclado .tecla{
+    width: 50px;
     background-color: var(--black);
+    border: 1px solid var(--red);
+}
+
+#teclado .tecla:hover{
+    background-color: var(--red);
+}
+
+.tecla-certa{
+    background-color: var(--green);
     border: 1px solid var(--green);
 }
 
-#teclado .btn:hover{
-    background-color: var(--green);
+.tecla-errada{
+    background-color: var(--red);
 }
 
-#teclado button{
-    width: 50px;
+#resultado{
+    color: var(--green);
 }
