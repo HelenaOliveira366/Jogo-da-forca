@@ -40,6 +40,11 @@ body{
     scale: 1.1;
 }
 
+.btn:active{
+    border: 1px solid var(--red) !important;
+    color: var(--red) !important;
+}
+
 #apresentacao h1{
     color: var(--red);
     font-size: 4rem;
