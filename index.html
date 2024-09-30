@@ -27,27 +27,27 @@
                         Vamos começar?
                     </p>
                     <div class="gif"></div>
-                    <button type="submit" class="btn mt-4">Começar</button>
+                    <button class="btn mt-4 botaoComecar">Começar</button>
                 </div>
             </div>
 
-            <div id="capturaPalavra" class="row m-4">
-                <div class="col  d-flex flex-column justify-content-center align-items-center">
+            <div id="capturaPalavra" class="row m-4 hidden">
+                <div class="col d-flex flex-column justify-content-center align-items-center">
                     <form>
                         <div class="m-5">
-                            <label for="word" class="form-label mb-3">Digite a palavra a ser adivinhada:</label>
-                            <input type="text" name="word" id="word" class="form-control" required>
+                            <label for="palavra" class="form-label mb-3">Digite a palavra a ser adivinhada:</label>
+                            <input type="text" name="palavra" id="palavra" class="form-control" required placeholder="Ex.: Helena, Gecko, Caderno">
                         </div>
                         <div class="m-5">
-                            <label for="word" class="form-label mb-3">Quer dar uma dica? Se sim, qual?</label>
-                            <input type="text" name="word" id="word" class="form-control">
+                            <label for="categoria" class="form-label mb-3">Qual é a categoria da palavra?</label>
+                            <input type="text" name="categoria" id="categoria" class="form-control" required placeholder="Ex.: Nome, Animal, Objeto">
                         </div>
-                        <button type="submit" class="btn btn-danger">Adivinhar</button>
+                        <button type="submit" class="btn botaoAdivinhar">Adivinhar</button>
                     </form>
                 </div>
             </div>
             
-            <div id="adivinhacao" class="row m-4 ">
+            <div id="adivinhacao" class="row m-4 hidden">
                 <p>A palavra é:</p>
                 <div id="boneco"></div>
                 <div id="insercao-letras" class="d-flex justify-content-center align-items-center">
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <div id="resultado" class="positivo">
+            <div id="resultado" class="positivo hidden">
                 <p>Positivo</p>
             </div>
         </div>
