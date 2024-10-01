@@ -33,7 +33,7 @@
 
             <div id="capturaPalavra" class="row m-4 hidden">
                 <div class="col d-flex flex-column justify-content-center align-items-center">
-                    <form>
+                    <form id="formulario">
                         <div class="m-5">
                             <label for="palavra" class="form-label mb-3">Digite a palavra a ser adivinhada:</label>
                             <input type="text" name="palavra" id="palavra" class="form-control" required placeholder="Ex.: Helena, Gecko, Caderno">
@@ -53,39 +53,35 @@
                 <div id="insercao-letras" class="d-flex justify-content-center align-items-center">
                     <p>&nbsp;</p>
                 </div>
-                <div id="teclado">
-                    <div>
-                        <button class="btn mb-2 tecla" value="A">A</button>
-                        <button class="btn mb-2 tecla" value="B">B</button>
-                        <button class="btn mb-2 tecla" value="C">C</button>
-                        <button class="btn mb-2 tecla" value="D">D</button>
-                        <button class="btn mb-2 tecla" value="E">E</button>
-                        <button class="btn mb-2 tecla" value="F">F</button>
-                        <button class="btn mb-2 tecla" value="G">G</button>
-                        <button class="btn mb-2 tecla" value="H">H</button>
-                        <button class="btn mb-2 tecla" value="I">I</button>
-                    </div>
-                    <div>
-                        <button class="btn mb-2 tecla" value="J">J</button>
-                        <button class="btn mb-2 tecla" value="K">K</button>
-                        <button class="btn mb-2 tecla" value="L">L</button>
-                        <button class="btn mb-2 tecla" value="M">M</button>
-                        <button class="btn mb-2 tecla" value="N">N</button>
-                        <button class="btn mb-2 tecla" value="O">O</button>
-                        <button class="btn mb-2 tecla" value="P">P</button>
-                        <button class="btn mb-2 tecla" value="Q">Q</button>
-                        <button class="btn mb-2 tecla" value="R">R</button>
-                    </div>
-                    <div>
-                        <button class="btn mb-2 tecla" value="S">S</button>
-                        <button class="btn mb-2 tecla" value="T">T</button>
-                        <button class="btn mb-2 tecla" value="U">U</button>
-                        <button class="btn mb-2 tecla" value="V">V</button>
-                        <button class="btn mb-2 tecla" value="W">W</button>
-                        <button class="btn mb-2 tecla" value="X">X</button>
-                        <button class="btn mb-2 tecla" value="Y">Y</button>
-                        <button class="btn mb-2 tecla" value="Z">Z</button>
-                    </div>
+                <div id="teclado" class="d-flex flex-wrap justify-content-center">
+                    <button class="btn m-2 tecla" value="A">A</button>
+                    <button class="btn m-2 tecla" value="B">B</button>
+                    <button class="btn m-2 tecla" value="C">C</button>
+                    <button class="btn m-2 tecla" value="D">D</button>
+                    <button class="btn m-2 tecla" value="E">E</button>
+                    <button class="btn m-2 tecla" value="F">F</button>
+                    <button class="btn m-2 tecla" value="G">G</button>
+                    <button class="btn m-2 tecla" value="H">H</button>
+                    <button class="btn m-2 tecla" value="I">I</button>
+                    
+                    <button class="btn m-2 tecla" value="J">J</button>
+                    <button class="btn m-2 tecla" value="K">K</button>
+                    <button class="btn m-2 tecla" value="L">L</button>
+                    <button class="btn m-2 tecla" value="M">M</button>
+                    <button class="btn m-2 tecla" value="N">N</button>
+                    <button class="btn m-2 tecla" value="O">O</button>
+                    <button class="btn m-2 tecla" value="P">P</button>
+                    <button class="btn m-2 tecla" value="Q">Q</button>
+                    <button class="btn m-2 tecla" value="R">R</button>
+                    
+                    <button class="btn m-2 tecla" value="S">S</button>
+                    <button class="btn m-2 tecla" value="T">T</button>
+                    <button class="btn m-2 tecla" value="U">U</button>
+                    <button class="btn m-2 tecla" value="V">V</button>
+                    <button class="btn m-2 tecla" value="W">W</button>
+                    <button class="btn m-2 tecla" value="X">X</button>
+                    <button class="btn m-2 tecla" value="Y">Y</button>
+                    <button class="btn m-2 tecla" value="Z">Z</button>
                 </div>
             </div>
 

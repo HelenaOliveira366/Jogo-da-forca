@@ -88,9 +88,10 @@ body{
 }
 
 #teclado .tecla{
-    width: 50px;
+    width: 60px;
     background-color: var(--black);
     border: 1px solid var(--red);
+    font-size: 1.2rem;
 }
 
 #teclado .tecla:hover{
