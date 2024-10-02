@@ -6,6 +6,7 @@ const botaoComecar = document.querySelector('.botaoComecar');
 const sessaoCapturaPalavra = document.querySelector('#capturaPalavra');
 const botaoAdivinhar = document.querySelector('.botaoAdivinhar');
 const sessaoAdivinhacao = document.querySelector('#adivinhacao');
+const paragrafoSessaoAdivinhacao = document.querySelector('#adivinhacao p');
 
 const formulario = document.querySelector('#formulario');
 const receberPalavra = document.querySelector('#palavra');
@@ -23,7 +24,11 @@ botaoAdivinhar.addEventListener('click', function(){
 
 formulario.addEventListener('submit', (evento) => {
     evento.preventDefault();
-    
+    const valorPalavra = receberPalavra.value;
+    palavra.textContent = valorPalavra;
+
+    const valorCategoria = receberCategoria.value;
+    paragrafoSessaoAdivinhacao.textContent = `Categoria: ${valorCategoria}`;
 });
 
 teclas.forEach(function(tecla){
