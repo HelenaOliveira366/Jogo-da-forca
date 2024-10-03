@@ -83,7 +83,7 @@ body{
 
 
 #insercao-letras p{
-    width: 40%;
+    width: 50%;
     border-bottom: 1px solid var(--red);
 }
 
