@@ -17,18 +17,30 @@ botaoComecar.addEventListener('click', function(){
     sessaoCapturaPalavra.classList.remove('hidden')
 });
 
+/*Se esse elemento for ocultado antes da validação do cmampo, ocorrerá o erro "An invalid form control with name='palavra' is not focusable.​" por conta do atributo "required" na tag input
 botaoAdivinhar.addEventListener('click', function(){
-    sessaoCapturaPalavra.classList.add('hidden');
-    sessaoAdivinhacao.classList.remove('hidden');
+    
 });
+*/
 
 formulario.addEventListener('submit', (evento) => {
     evento.preventDefault();
-    const valorPalavra = receberPalavra.value;
-    palavra.textContent = valorPalavra;
 
+    const valorPalavra = receberPalavra.value;
     const valorCategoria = receberCategoria.value;
-    paragrafoSessaoAdivinhacao.textContent = `Categoria: ${valorCategoria}`;
+
+    //validação
+    if(valorPalavra === "" || valorCategoria === ""){
+        alert("Preencha o(s) campo(s) em branco");
+    }
+    else{
+        sessaoCapturaPalavra.classList.add('hidden');
+        sessaoAdivinhacao.classList.remove('hidden');
+    }
+
+    //Escreve o valor das entradas na tela
+    palavra.textContent = valorPalavra.toUpperCase();
+    paragrafoSessaoAdivinhacao.textContent = `Categoria: ${valorCategoria.toUpperCase()}`;
 });
 
 teclas.forEach(function(tecla){
